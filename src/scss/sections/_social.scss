@@ -1,0 +1,22 @@
+// 
+// Social
+// 
+// Styling for the social icons
+.social-icons {
+    position: absolute;
+    z-index: 2;
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 0;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100rem;
+    }
+}
+
+.social-icons .btn:hover {
+    background-color: #303030;
+}

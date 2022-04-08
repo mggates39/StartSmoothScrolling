@@ -5,12 +5,15 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='Personal Website')
+        meta(name='author', content='Marshall G Gates (mggates@gmail.com)')
 
-        title Scrolling Nav - Start Bootstrap Template
+        title Marshall Gates
 
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
@@ -20,7 +23,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
             .container.px-4
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') Home
                 button.navbar-toggler(type='button' data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
@@ -35,18 +38,18 @@ html(lang='en')
                             a.nav-link(href='#contact') Contact
 
         // Header
-        header.bg-primary.bg-gradient.text-white
+        header.bg-dark.bg-gradient.text-white
             .container.px-4.text-center
-                h1.fw-bolder Welcome to Scrolling Nav
-                p.lead A functional Bootstrap 5 boilerplate for one page scrolling websites
-                a.btn.btn-lg.btn-light(href='#about') Start scrolling!
+                h1.fw-bolder Welcome to my home on the web
+                p.lead It is a showcase my work, hobbies, and writings.
+                
 
         // About section
         section#about
             .container.px-4
                 .row.gx-4.justify-content-center
                     .col-lg-8
-                        h2 About this page
+                        h2 About this site
                         p.lead
                             | This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:
                         ul
@@ -79,9 +82,24 @@ html(lang='en')
             .container.px-4
                 .row.gx-4.justify-content-center
                     .col-lg-8
-                        h2 Contact us
+                        h2 Contact me
                         p.lead
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.
+                            | Here are a few ways to get in touch with me or find out more about me.
+                        .social-icons
+                            .dd-flex.flex-row.flex-lg-column.justify-content-center.align-items-center.h-100.mt-3.mt-lg-0
+                                a.btn.btn-dark.m-3(href='https://twitter.com/mggates39')
+                                    i.fab.fa-twitter
+                                a.btn.btn-dark.m-3(href='https://www.facebook.com/marshall.gates/')
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-dark.m-3(href='https://www.linkedin.com/in/marshall-gates/')
+                                    i.fab.fa-linkedin
+                                a.btn.btn-dark.m-3(href='https://mggates.blogspot.com/')
+                                    i.fab.fa-blogger-b
+                                a.btn.btn-dark.m-3(href='https://github.com/mggates39/')
+                                    i.fab.fa-github-alt
+                                a.btn.btn-dark.m-3(href='https://mggates39.github.io/Resume/')
+                                    i(title='Resume').far.fa-file-alt
+
 
         // Footer
         footer.py-3.bg-dark
