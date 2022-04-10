@@ -11395,3 +11395,64 @@ section {
 .social-icons .btn:hover {
   background-color: #303030;
 }
+
+/*set styles for the wrapper around the image that will be displayed on click*/
+.gallery {
+  background-color: black;
+}
+
+.gallery > .gallery-main {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+/*set styles for the inner container for the image that will be displayed on click*/
+.gallery > .gallery-main > .gallery-main-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/*set styles for the image itself*/
+.gallery > .gallery-main > .gallery-main-image > img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+  height: 400px;
+}
+
+/*set styles for the filmstrip container*/
+.gallery > .gallery-filmstrip {
+  position: relative;
+  height: 280px;
+  margin-top: 10px;
+}
+
+/*set styles for everything inside the filmstrip container*/
+.gallery > .gallery-filmstrip > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*position everything inside the filmstrip in the center*/
+.gallery > .gallery-filmstrip > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*set animation class to the filmstrip on click*/
+.gallery > .gallery-filmstrip-animated > * {
+  transition: transform 1s, opacity 1s;
+}
+
+/*set a height and width for the gallery filmstrip images*/
+.gallery > .gallery-filmstrip img {
+  height: 200px;
+  width: 200px;
+}
